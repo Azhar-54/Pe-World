@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Airbnb Cereal App';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url(/fonts/airbnb-cereal-app.woff2) format('woff2');
+}
+
+.custom-checkbox {
+	font-size: 1rem;
+	display: grid;
+	grid-template-columns: 1em auto;
+	align-items: center;
+	gap: 1em;
+	color: #696f79;
+	cursor: pointer;
+}
+
+.checkbox {
+	appearance: none;
+	background-color: #fff;
+	margin: 0;
+	font: inherit;
+	color: #efc81a;
+	width: 1.15em;
+	height: 1.15em;
+	border: 0.15em solid #696f79;
+	border-radius: 0.15em;
+	transition-duration: 120ms;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, border-color;
+	display: grid;
+	place-content: center;
+}
+
+.checkbox:checked {
+	background-color: #efc81a;
+	border-color: #efc81a;
+}
+
+.checkbox::before {
+	content: '';
+	width: 0.65em;
+	height: 0.65em;
+	transform: scale(0);
+	transform-origin: bottom left;
+	clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em #fff;
+}
+
+.checkbox:checked:before {
+	transform: scale(1);
+}
+
+.checkbox:focus {
+	outline: max(2px, 0.15em) solid #efc81a;
+	outline-offset: max(2px, 0.15em);
+}

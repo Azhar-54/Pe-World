@@ -1,0 +1,10 @@
+// const URL = process.env.BACKEND_URL;
+const URL = 'https://pijar-mama-recipe.vercel.app';
+export const RECIPES_URL = `${URL}/v1/recipes`;
+export const REGISTER_URL = `${URL}/v1/auth/register`;
+export const LOGIN_URL = `${URL}/v1/auth/login`;
+export const UPLOAD_URL = `${URL}/v1/upload`;
+export const PROFILE_URL = `${URL}/v1/users/profile`;
+export const MY_RECIPE_URL = `${URL}/v1/recipes/self`;
+export const LIKED_RECIPE_URL = `${URL}/v1/recipes/like`;
+export const SAVED_RECIPE_URL = `${URL}/v1/recipes/save`;
