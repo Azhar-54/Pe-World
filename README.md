@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/Azhar-54/peworld-frontEnd">
-      <img src="src\assets\purple-logo.svg" width="350"/>
+      <img src="https://github.com/Azhar-54/peworld-frontEnd/blob/main/src/assets/purple-logo.svg" width="350"/>
   </a>
 
   <h1 align="center">Peworld</h1>
