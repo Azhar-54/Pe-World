@@ -1,229 +1,199 @@
-# Mama Recipe
-
 <div align="center">
-  <img src="./public/images/logo.png">
-  <br>
-  <br>
-  <a href="https://wafash-mama-recipe.vercel.app/">View Demo</a>
+  <a href="https://github.com/Azhar-54/peworld-frontEnd">
+      <img src="https://github.com/Azhar-54/peworld-frontEnd/blob/main/src/assets/purple-logo.svg" width="350"/>
+  </a>
+
+  <h1 align="center">Peworld</h1>
+
+  <p align="center">
+    Peworld Implementation
+    <br />
+    <br />
+   <a href="https://peworld-front-end.vercel.app/" target="_blank">View Website Demo</a>
+    ·
+    <a href="https://github.com/Azhar-54/peworld-frontEnd" target="_blank">View Front-End Repo</a>
+  </p>
 </div>
 
-## Table of Contents
-
-- [Project Description](#project-description)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Project Repository](#project-repository)
-- [Project Screenshots](#project-screenshots)
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
 - [Getting Started](#getting-started)
-- [Contributions](#contributions)
-- [License](#license)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contributing](#contributing)
 - [Contact](#contact)
+- [Documentation](#documentation)
+- [Acknowledgements](#acknowledgements)
+## About The Project
 
-## Project Description
+This back-end project for **Peworld** was developed by [muhammadrisano](https://github.com/muhammadrisano) using Express.js. Feel free to explore the source code, which I have forked from the original repository. It includes all the files and documentation needed to develop and run the server side of this application. Thank you for developing this back-end project.
 
-MamaRecipe is the perfect website for food enthusiasts. With MamaRecipe, you can explore a wide variety of recipes from around the world, as well as create and share your own culinary creations. Discover cooking inspiration, follow easy steps, and enjoy delicious dishes every day. Join the MamaRecipe community and share your cooking expertise with other users.
+### Built With
 
-## Technologies Used
+- [Express.js](https://expressjs.com/)
+- [Node.js](https://nodejs.org/en)
+- [MongoDB](https://www.mongodb.com/)
 
-This website is built with following technologies:
+## Getting Started
 
-- NextJS
-- Redux
-- Tailwind CSS
-- Vercel
+To get a local copy up and running follow these simple steps.
 
-By leveraging these technologies, MamaRecipe ensures a robust, scalable, and maintainable web application that delivers a great user experience.
+### Prerequisites
+
+Ensure you have the following installed on your local machine:
+- node js
+  
+     [Visit Link to download Node.Js](https://nodejs.org/en)
+  
+
+- npm
+
+  ```
+     npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone Repo
+
+   ```
+     git clone https://github.com/Azhar-54/fwm17-be-peword.git
+   ```
+
+2. Go to folder
+
+   ```
+    cd fwm17-be-peword
+   ```
+
+   ```
+     code .
+   ```
+
+3. Install NPM packages
+
+   ```
+     npm install
+   ```
+
+4. To start the development server:
+
+   ```
+     npm run dev
+   ```
+  <!-- if doesnt work
+
+   ```
+      node index.js
+   ```
+   -->
+
+## Usage
+
+To use this project, follow the instructions below for understanding the project structure and how to use the provided API documentation.
 
 ## Project Structure
 
 ```
-└── recipe-app
-      ├── components                         # Contains reusable React components.
-      ├── config                             # Contains configuration files.
-      ├── constants                          # Contains constant values used throughout the application.
-      ├── data                               # Contains data files.
-      ├── helpers                            # Contains helper functions and utilities.
-      ├── hooks                              # Contains custom React hooks.
-      ├── lib                                # Contains library functions and modules.
-      ├── pages                              # Contains Next.js pages, which correspond to routes in the application.
-      ├── public                             # Contains public assets such as images and fonts.
-      ├── screenshots                        # Contains screenshots of the application.
-      ├── styles                             # Contains global styles and Tailwind CSS styles.
-      ├── .env                               # Contains environment variables.
-      ├── .eslintrc.json                     # Configuration file for ESLint.
-      ├── .gitignore                         # Specifies files and directories that should be ignored by Git.
-      ├── jsconfig.json                      # Configuration file for JavaScript project settings.
-      ├── middleware.js                      # Contains middleware functions.
-      ├── next.config.mjs                    # Configuration file for Next.js.
-      ├── package-lock.json                  # Describes the exact dependency tree generated, ensuring reproducible builds.
-      ├── package.json                       # Contains project dependencies and scripts.
-      ├── postcss.config.mjs                 # Configuration file for PostCSS.
-      ├── README.md                          # The project documentation file.
-      ├── tailwind.config.js                 # Configuration file for Tailwind CSS.
+fwm17-be-peword/
+├── node_modules/
+├── src/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── auth/
+│   │   │   ├── index.js
+│   │   │   └── request_model.js
+│   │   ├── experience/
+│   │   │   ├── index.js
+│   │   │   └── request_model.js
+│   │   ├── hire/
+│   │   │   ├── index.js
+│   │   │   └── request_model.js
+│   │   ├── portfolio/
+│   │   │   ├── index.js
+│   │   │   └── request_model.js
+│   │   ├── recruiter/
+│   │   │   ├── index.js
+│   │   │   └── request_model.js
+│   │   ├── skill/
+│   │   │   ├── index.js
+│   │   │   └── request_model.js
+│   │   └── workers/
+│   │       ├── index.js
+│   │       └── request_model.js
+│   ├── helpers/
+│   │   ├── auth.js
+│   │   └── common.js
+│   ├── middlewares/
+│   │   ├── auth.js
+│   │   └── upload.js
+│   ├── models/
+│   │   ├── experience.js
+│   │   ├── hire.js
+│   │   ├── portfolio.js
+│   │   ├── recruiter.js
+│   │   ├── skill.js
+│   │   ├── users.js
+│   │   └── workers.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── experience.js
+│   │   ├── hire.js
+│   │   ├── index.js
+│   │   ├── portfolio.js
+│   │   ├── recruiter.js
+│   │   ├── skill.js
+│   │   ├── upload.js
+│   │   └── workers.js
+│   ├── utils/
+│        └── cloudinary.js
+│   
+├── .gitignore
+├── README.md
+├── index.js
+├── package-lock.json
+├── package.json
+├── vercel.json
+└── yarn.lock
 ```
 
-This structure helps in keeping the project organized and maintainable, making it easier to navigate and manage the codebase.
+### Documentation
 
-## Project Repository
+Access the API documentation for the **Peworld** project, also created by [him](https://github.com/muhammadrisano). Use this documentation to test endpoints and understand the structure and functionality of the available APIs in this project.
 
-This project consists of both frontend and backend repositories. You can find the links to both below:
+[![Peworld API Postman Documentation](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/7675329/2s9YysDhDY#d67edcdf-e1ef-468b-9877-2c3e930c82a9)
 
-- Backend Repository: [MamaRecipe Backend](https://github.com/wafash08/mama-recipe-be)
-- Live Demo: [MamaRecipe Live Demo](https://wafash-mama-recipe.vercel.app/)
+## Contributing
 
-Visit the backend repository for server-side code and API details. The live demo link will take you to the deployed version of the Peworld application.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Project Screenshots
-
-<table>
-  <tr>
-    <td>Register</td>
-    <td>Login</td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/mr-register.png" style="width:100%;"></td>
-    <td><img src="./screenshots/mr-login.png" style="width:100%;"></td>
-  </tr>
-  <tr>
-    <td>Home</td>
-    <td>Recipe Detail</td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/mr-home.png" style="width:100%;"></td>
-    <td><img src="./screenshots/mr-detail-recipe.png" style="width:100%;"></td>
-  </tr>
-  <tr>
-    <td>Add Recipe</td>
-    <td>Edit Recipe</td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/mr-add-recipe.png" style="width:100%;"></td>
-    <td><img src="./screenshots/mr-edit-recipe.png" style="width:100%;"></td>
-  </tr>
-  <tr>
-    <td>Profile</td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/mr-profile.png" style="width:100%;"></td>
-  </tr>
-</table>
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Installation
-
-1. Clone the repository
-
-```sh
-git clone https://github.com/wafash08/recipe-app
-```
-
-2. Navigate to the project directory:
-
-```sh
-cd recipe-app
-```
-
-3. Install the dependencies:
-
-```sh
-npm install
-```
-
-4. Start the development server:
-
-```sh
-npm run dev
-```
-
-This will start the development server and open the application in your default web browser. If it doesn't, you can access it at http://localhost:3000.
-
-### Test User Accounts
-
-Access pre-configured user accounts for testing purposes. Use these accounts to simulate different scenarios.
-
-```json
-{
-  "email": "carlgustav@gmail.com",
-  "password": "asdfhjkl"
-}
-```
-
-## Contributions
-
-Any contribution to Peworld is welcomed! If you have an idea for a new feature or have found a bug, please follow these steps to contribute:
-
-### How to Contribute
-
-1. Fork the Repository:
-
-Fork the repository to your own GitHub account by clicking the "Fork" button at the top right of the repository page.
-
-2. Clone the Forked Repository:
-
-```sh
-git clone https://github.com/your-username/recipe-app.git
-```
-
-3. Create a New Branch:
-
-Create a new branch for your feature or bug fix:
-
-```sh
-git checkout -b feature/YourFeatureName
-```
-
-or
-
-```sh
-git checkout -b bugfix/YourBugFixName
-```
-
-4. Make Your Changes:
-
-Make the necessary changes in your local development environment.
-
-5. Commit Your Changes:
-
-Commit your changes with a descriptive commit message:
-
-```sh
-git add .
-git commit -m "Add Your Descriptive Commit Message"
-```
-
-6. Push to Your Fork:
-
-Push your changes to your forked repository:
-
-```sh
-git push origin feature/YourFeatureName
-```
-
-or
-
-```sh
-git push origin bugfix/YourBugFixName
-```
-
-7. Open a Pull Request:
-
-Open a pull request to the main repository by navigating to the original repository and clicking the "New Pull Request" button. Ensure your pull request includes a clear description of the changes and why they are necessary.
-
-### Issues
-
-If you encounter any issues, please open an issue in the GitHub repository. Provide as much detail as possible to help us resolve the problem quickly.
-
-## License
-
-This project is licensed under the MIT License. For more details, please refer to the [LICENSE](./LICENSE) file.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## Contact
 
-If you have any questions, suggestions, or just want to get in touch, feel free to contact Me!
+If you have any questions or inquiries regarding this project, don't hesitate to reach out:
 
-- Email: saefulhaqwafa@gmail.com
-- Linkedin: [linkedin.com/in/m-wafa-saeful-haq](https://www.linkedin.com/in/m-wafa-saeful-haq)
-- Twitter: [@saefulhaqwafa](https://x.com/saefulhaqwafa)
+Email: burhanuddinazhar2@gmail.com
+
+For issues related to the back-end, please contact the original developer, [Muhammad Risano](https://github.com/muhammadrisano). 
+
+We're here to help!
+
+### Related Project
+:rocket: [`Peworld Front End`](https://github.com/Azhar-54/peworld-frontEnd)
+
+:rocket: [`Demo Back End`](https://fwm17-be-peword.vercel.app/v1/workers)
+
+## Acknowledgements
+
+Feel free to check it out:
+
+- [Img Shields](https://shields.io)
+- [Choose an Open Source License](https://choosealicense.com/)
+- [GitHub Pages](https://pages.github.com/)
