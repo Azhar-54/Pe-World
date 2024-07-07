@@ -143,7 +143,7 @@ pass  : budi123
   </tr>
   <tr>
     <td>Profile Worker</td>
-    <td>Edit Profle Worker</td>
+    <td>Edit Profile Worker</td>
   </tr>
   <tr>
     <td><img src="https://imgur.com/aKTxKKo.jpg" /></td>
